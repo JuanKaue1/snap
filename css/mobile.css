@@ -1,0 +1,194 @@
+@media screen and (max-width: 590px) {
+    *,
+    *::after,
+    *::before {
+      box-sizing: border-box;
+      font-family: "Epilogue", sans-serif;
+    }
+    html {
+      font-size: 18px;
+      width: 100%;
+      height: 100%;
+    }
+  
+    body {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      width: 100%;
+      height: 100%;
+    }
+  
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-inline: 16px;
+      height: 7%;
+    }
+  
+    /* Exibir o menu e alterar aparencia do body */
+  
+    .menu-open {
+      background-color: hsl(0, 0%, 59%);
+      opacity: 0.6;
+    }
+  
+    /* Desing dentro do menu */
+  
+    nav {
+      background-color: hsl(0, 0%, 98%);
+      position: absolute;
+      inset-inline-end: 0;
+      inset-inline-start: 39%;
+      inset-block-start: 0;
+      inset-block-end: 0;
+      z-index: 10;
+      color: hsl(0, 0%, 41%);
+      display: none;
+    }
+  
+    nav > img {
+      display: block;
+      margin: 16px 16px 16px auto;
+    }
+  
+    nav picture > img {
+      padding-inline-start: 8px;
+      width: 16px;
+      height: 8px;
+    }
+  
+    .list {
+      list-style-type: none;
+      padding-inline-start: 24px;
+      font-size: 1.0rem;
+      margin-block: 0;
+  
+    }
+  
+    .list > li {
+      padding-block-end: 18px;
+    }
+  
+    .list > li:nth-child(4n + 1) {
+      padding-block-start: 16px;
+    }
+  
+    .features-icon {
+      padding-inline-end: 8px;
+      width: inherit;
+    }
+  
+    .features-options {
+      display: none;
+    }
+    .company-options {
+      display: none;
+    }
+  
+    nav > button {
+      display: block;
+      width: 70%;
+      margin-inline: auto;
+      background-color: hsl(0, 0%, 98%);
+      padding: 10px;
+      font-size: 1rem;
+      border-radius: 16px;
+      color: hsl(0, 0%, 41%);
+      border-width: 2px;
+      border-color: hsl(0, 0%, 42%);
+      border-style: solid;
+      cursor: pointer;
+    }
+  
+    nav > button:nth-child(2n + 1) {
+      border: none;
+      margin-block-end: 8px;
+    }
+  
+    /* Desing da tela principal */
+    main {
+      height: 80%;
+    }
+  
+    main > img {
+      padding-block-start: 8px;
+      width: 100%;
+      height: 58%;
+      z-index: 5;
+    }
+  
+    main > section {
+      height: 47%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+    }
+  
+    section h1 {
+      font-size: 1.92rem;
+      text-align: center;
+      margin: 0;
+      padding-block-start: 5px;
+      padding-block-end: 5px;
+    }
+  
+    section p {
+      text-align: center;
+      line-height: 1.5;
+      margin-block-start: 0;
+      padding-inline: 8px;
+      font-size: 0.9rem;
+      color: hsl(0, 0%, 41%);
+    }
+  
+    p > * {
+      font-weight: initial;
+      font-style: normal;
+      text-decoration: none;
+    }
+  
+    section > button {
+      text-align: center;
+      width: 40%;
+      color: hsl(0, 0%, 98%);
+      background-color: hsl(0, 0%, 8%);
+      padding: 16px;
+      border-radius: 16px;
+      border: none;
+      font-size: 0.9rem;
+      border: 2px solid hsl(0, 0%, 8%);
+    }
+  
+    section > button:hover {
+      background-color: hsl(0, 0%, 98%);
+      color: hsl(0, 0%, 8%);
+      border: 2px solid hsl(0, 0%, 8%);
+      font-weight: 600;
+    }
+    /* Desgin dos clientes */
+  
+    aside {
+      height: 13%;
+    }
+  
+    aside ul {
+      list-style-type: none;
+      width: 100%;
+      padding: 20px;
+      display: inline-flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      margin-block-end: 0;
+      margin-block-start: 26px;
+      align-content: flex-end;
+    }
+  
+    aside ul img {
+      width: 85%;
+      height: 95%;
+    }
+  }

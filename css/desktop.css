@@ -1,0 +1,226 @@
+@media screen and (min-width: 590px) {
+    *,
+    *::after,
+    *::before {
+      box-sizing: border-box;
+      font-family: "Epilogue", sans-serif;
+    }
+    html {
+      font-size: 18px;
+      inline-size: 100%;
+      block-size: 100%;
+    }
+  
+    body {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      inline-size: 100%;
+      block-size: 100%;
+      background-color: hsl(0, 0%, 98%);
+    }
+  
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-inline: 16px;
+      block-size: 10%;
+    }
+  
+    header h1 {
+      padding-inline-start: 0px;
+      padding-block-start: 0px;
+      padding-bottom: 1px;
+    }
+  
+    header img {
+      display: none;
+    }
+  
+    /* Desing dentro do menu */
+  
+    nav {
+      color: hsl(0, 0%, 41%);
+      position: absolute;
+      inset-inline-start: 15%;
+      inset-inline-end: 2%;
+      inset-block-start: 3%;
+      display: flex;
+      align-items: baseline;
+      font-size: 0.8rem;
+    }
+  
+    nav > ul {
+      display: flex;
+      flex-grow: 2;
+    }
+  
+    nav > img {
+      display: none;
+    }
+  
+    nav picture > img {
+      padding-inline-start: 8px;
+      inline-size: 16px;
+      block-size: 8px;
+    }
+  
+    .list {
+      list-style-type: none;
+      margin-block: 0;
+      padding-inline-start: -1px;
+    }
+
+    .list > li {
+      padding-inline-end: 32px;
+      padding-block-end: 12px;
+    }
+    picture + ul li:hover, .main-option:hover {
+      color: hsl(0, 0%, 8%);
+      font-weight: 600;
+      cursor: pointer;
+    }
+  
+    .list li:nth-of-type(4n + 0) {
+      padding-inline-end: 0;
+    }
+  
+    .features-icon {
+      padding-inline-end: 8px;
+      inline-size: inherit;
+    }
+  
+    .features-options {
+      display: none;
+      inset-inline-start: -4%;
+      inset-block-start: 100%;
+    }
+  
+    .company-options {
+      display: none;
+      inset-block-start: 100%;
+    }
+  
+    .drop-options {
+      position: absolute;
+      background-color: hsl(0, 0%, 100%);
+      padding-block: 8px;
+      border-radius: 8px;
+      box-shadow: 5px 5px 5px hsl(0, 0%, 63%);
+    }
+  
+    .drop-options li {
+      padding-inline: 12px;
+    }
+  
+    nav > button {
+      display: block;
+      background-color: hsl(0, 0%, 98%);
+      padding: 8px 12px;
+      font-size: 0.8rem;
+      border-radius: 10px;
+      color: hsl(0, 0%, 41%);
+      border-width: 2px;
+      border-color: hsl(0, 0%, 42%);
+      border-style: solid;
+      cursor: pointer;
+    }
+  
+    nav > button:nth-child(2n + 1) {
+      border: none;
+      margin-inline-end: 0;
+    }
+  
+    /* Desing da tela principal */
+    main {
+      block-size: 70%;
+      inline-size: 80%;
+      margin-inline: auto;
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+    }
+  
+    main > img {
+      inline-size: 60%;
+      max-inline-size: 500px;
+      block-size: 80%;
+
+    }
+  
+    main > section {
+      block-size: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+  
+    section h1 {
+      font-size: 3rem;
+      margin: 0;
+      padding-block-start: 56px;
+      padding-block-end: 24px;
+    }
+  
+    section p {
+      line-height: 1.4;
+      margin-block-start: 0;
+      font-size: 0.8rem;
+      color: hsl(0, 0%, 41%);
+      padding-inline-end: 72px;
+    }
+  
+    p > * {
+      font-weight: initial;
+      font-style: normal;
+      text-decoration: none;
+    }
+  
+    section > button {
+      text-align: center;
+      width: 35%;
+      color: hsl(0, 0%, 98%);
+      background-color: hsl(0, 0%, 8%);
+      padding: 12px 16px;
+      border-radius: 16px;
+      border: none;
+      font-size: 0.9rem;
+      border: 2px solid hsl(0, 0%, 8%);
+    }
+  
+    section > button:hover {
+      background-color: hsl(0, 0%, 98%);
+      color: hsl(0, 0%, 8%);
+      border: 2px solid hsl(0, 0%, 8%);
+      font-weight: 600;
+    }
+    /* Desgin dos clientes */
+  
+    aside {
+      height: 9%;
+      position: absolute;
+      inset-inline-start: 15%;
+      inset-inline-end: 80%;
+      inset-block-end: 15%;
+    }
+  
+    aside ul {
+      list-style-type: none;
+      width: 300px;
+      padding: 0px;
+      display: inline-flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      margin-block-end: 0;
+      margin-block-start: 26px;
+      align-content: flex-end;
+    }
+  
+    aside ul img {
+      width: 85%;
+      height: 95%;
+    }
+  }
